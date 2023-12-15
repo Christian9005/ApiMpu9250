@@ -11,4 +11,7 @@ public class MPUDto
     public float Mx { get; set; }
     public float My { get; set; }
     public float Mz { get; set; }
+    public float Pitch { get; set; }
+    public float Roll { get; set; }
+    public float Yaw { get; set; }
 }

@@ -39,6 +39,9 @@ public class MPUController : ControllerBase
             Mx = mPUDto.Mx,
             My = mPUDto.My,
             Mz = mPUDto.Mz,
+            Pitch = mPUDto.Pitch,
+            Roll = mPUDto.Roll,
+            Yaw = mPUDto.Yaw,
         };
 
         mPUDbContext.Mpus.Add(mpu);
@@ -63,6 +66,9 @@ public class MPUController : ControllerBase
             existingMpu.Mx = mPUDto.Mx;
             existingMpu.My = mPUDto.My;
             existingMpu.Mz = mPUDto.Mz;
+            existingMpu.Pitch = mPUDto.Pitch;
+            existingMpu.Roll = mPUDto.Roll;
+            existingMpu.Yaw = mPUDto.Yaw;
 
             await mPUDbContext.SaveChangesAsync();
 
